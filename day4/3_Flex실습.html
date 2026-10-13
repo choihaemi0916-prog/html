@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>굿쇼핑몰</title>
+    <style>
+        body {
+            background-color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px; 
+        }
+        #header {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 5px 5px 5px #ccc;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        #menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #menu a {
+            text-decoration: none;
+            color: black;
+            background-color: #eee;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        #menu a:hover {
+            background-color: #ccc;
+        }
+        
+        #content {
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 30px;
+            width: 258px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 15px;
+            border: 1px solid rgb(221, 221, 221);
+        }
+        .explanation p {
+            padding-bottom: 20px;
+            color: #636363;
+        }
+        .buy button {
+            width: 200px;
+            border-radius: 5px;
+            background-color: rgb(39, 122, 216);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy button:hover {
+            background-color: rgb(112, 179, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">굿쇼핑몰</div>
+            <div id="menu">
+                <a href="javascript:;">장바구니</a>
+                <a href="javascript:;">마이페이지</a>
+                <a href="javascript:;">로그아웃</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="box">
+                <div class="image"><img src="../images/img1.jpg"></div>
+                <div class="explanation">
+                    <h3>든든 한섬만두</h3>
+                    <p>이 상품은 한섬만두입니다.</p>
+                </div>
+                <div class="buy"><button>구매하기</button></div>
+            </div>
+            <div class="box">
+                <div class="image"><img src="../images/img2.jpg"></div>
+                <div class="explanation">
+                    <h3>이맛쌀</h3>
+                    <p>이 상품은 이맛쌀입니다.</p>
+                </div>
+                <div class="buy"><button>구매하기</button></div>
+            </div>
+            <div class="box">
+                <div class="image"><img src="../images/img3.jpg"></div>
+                <div class="explanation">
+                    <h3>경기미</h3>
+                    <p>이 상품은 경기미입니다.</p>
+                </div>
+                <div class="buy"><button>구매하기</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
