@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>최혜미 - 자기소개 프로필</title>
+</head>
+<body id="main">
+    <header>
+        <div class="header-time" id="currentTime">
+            <i class="fa-regular fa-clock"></i> <span>불러오는 중...</span>
+        </div>
+        <div class="sns">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/choihaemi0916-prog/deploy202610/tree/main/introduction" target="_blank"><i class='fab fa-github'></i></a>
+        </div>
+    </header>
+
+    <div id="container2">
+        <div class="main_text">
+            <div class="badge-box">
+                <span class="badge">#Frontend</span>
+                <span class="badge">#Junior</span>
+                <span class="badge">#Growth</span>
+            </div>
+            
+            <h1 class="main-title">프론트엔드 개발자 '꿈나무'<span class="highlight">최혜미</span>입니다</h1>
+            <p class="main-desc">
+                사용자 <b>경험(UX)</b>을 고민하고, 코드로 가치를 만들어가는 개발자가 되기 위해 매일 성장하고 있습니다. ✨
+            </p>
+
+            <div class="btn-group">
+                <a href="index.html" class="main_btn">
+                    <span>포트폴리오 보러가기</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const date = String(now.getDate()).padStart(2, '0');
+            const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+            const day = dayNames[now.getDay()];
+            
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            const timeString = `${year}.${month}.${date}(${day}) ${hours}:${minutes}:${seconds}`;
+            document.querySelector('#currentTime span').innerText = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

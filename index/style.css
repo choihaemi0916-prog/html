@@ -1047,3 +1047,100 @@
             animation-direction: alternate;
             animation-timing-function: ease-in-out;
         }
+
+        #main {
+            background-image: url(background.jpg);
+            background-size: 100%;
+        }
+
+        .main_text {
+            max-width: 600px;
+        }
+
+        #container2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 700px;            
+            padding-left: 200px;
+        }
+
+        #container2 .main_text {
+            border: 10px dotted white;
+            padding: 50px;
+            margin-top: 300px;
+            border-radius: 100px;
+        }
+
+        .badge-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 2px 15px;
+            border-radius: 20px;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+        }
+
+        .main-title {
+            font-size: 100px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #ff8264;
+        }
+
+        .main-desc {
+            font-size: 40px;
+            color: white;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .btn-group {
+            display: inline-block;
+        }
+
+        .main_btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+            padding: 8px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 30px;
+            font-family: 'Dongle', sans-serif;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background-color: #ffb4a2;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 121, 87);
+            padding: 4px 14px;   
+        }
+
+        .main_btn:hover {
+            background: rgba(255, 121, 87);
+            color: #ffffff;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgb(250, 130, 130);
+        }
+
+        .main_btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .main_btn:hover i {
+            transform: translateX(5px);
+        }
